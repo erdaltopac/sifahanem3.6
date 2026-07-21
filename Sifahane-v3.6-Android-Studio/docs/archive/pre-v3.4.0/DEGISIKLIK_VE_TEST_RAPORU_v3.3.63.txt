@@ -1,0 +1,21 @@
+ŞİFAHANE v3.3.63 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.63
+- versionCode: 336300
+
+Uygulanan düzenlemeler
+- Değişiklikler yalnızca Raporlar sayfasıyla sınırlandırıldı.
+- Sınırlandırılmış kontrol ve seçim alanlarının arka planı yüzde 50 opak logo yeşiline getirildi.
+- Kontroller 10 dp yumuşak yuvarlatılmış köşe kullanıyor.
+- 4 dp iç yumuşak sınır ve yüzde 5 Vantablack cam katmanı korundu ve köşe biçimine kırpıldı.
+- Buton, seçim ve veri alanı metinleri ortak labelLarge tipografisine ve merkez hizasına getirildi.
+- İşlem yapılmamış metinler Regular; tarih/kapsam seçimi, grafik kutusu etkileşimi veya başarılı işlem sonrasında ilgili metin Bold olur.
+- Seçim sıfırlandığında ilgili metin tekrar Regular olur.
+- Silme kontrolünün Türk kırmızısı metin ve simge anlamı korundu.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI

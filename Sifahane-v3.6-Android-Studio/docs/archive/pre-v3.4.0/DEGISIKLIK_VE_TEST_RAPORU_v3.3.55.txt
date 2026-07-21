@@ -1,0 +1,18 @@
+ŞİFAHANE v3.3.55 DEĞİŞİKLİK VE TEST RAPORU
+
+- Kapsamlı kılavuzun FileProvider yolu düzeltildi; Word eki geniş uygulama uyumluluğuyla paylaşılır.
+- Dosya paylaşımı başarısız olursa kılavuz erişilebilir düz metin olarak paylaşılır.
+- Banner yalnızca boşluksuz tekrarlanan Hazerfen logosunu gösterir.
+- Kullanılmayan diğer banner logoları uygulama paketinden kaldırıldı.
+- Banner üzerine sabit %10 opaklıkta vantablack cam katmanı eklendi.
+- Tema ayarlarına Roboto, Noto Sans, Atkinson Hyperlegible, Lexend ve Noto Serif eklendi.
+- Yazı tipi ve renk görünümü seçimleri açılır listeye dönüştürüldü.
+- Türk mavisi ve Türk kırmızısı renk görünümleri eklendi.
+- Vurgu rengi opaklığı %35–%100 aralığında ayarlanabilir hâle getirildi.
+- Yazı tipleri çevrimdışı kullanım için uygulamaya gömüldü; açık font lisansları assets/font_licenses altında paketlendi.
+
+OTOMATİK DOĞRULAMA
+- Kotlin derleme
+- 6 birim testi
+- Android Lint
+- Debug APK üretimi

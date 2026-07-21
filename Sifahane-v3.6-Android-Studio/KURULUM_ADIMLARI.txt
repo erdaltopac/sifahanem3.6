@@ -1,0 +1,11 @@
+ŞİFAHANE v3.4.0 KURULUM
+
+1. Kaynak ZIP'ini ayıklayın ve Android Studio ile proje kökünü açın.
+2. JDK 17 ve güncel Android SDK 35 bileşenlerinin kurulu olduğunu doğrulayın.
+3. Gradle Sync tamamlandıktan sonra test, lint ve debug derlemeyi çalıştırın.
+4. Oluşturulan app-debug.apk dosyasını mevcut uygulamayı kaldırmadan güncelleme olarak kurun.
+5. İlk açılışta yeni yönetici PIN'i oluşturun.
+6. Bildirim, kesin alarm ve tam ekran alarm izinlerini uygulama içindeki izin ekranından doğrulayın.
+7. İlk şifreli yedeği oluşturup farklı bir konumda saklayın; yedek parolasını güvenli biçimde kaydedin.
+
+Mevcut uygulamayı kaldırmayın. Kaldırma işlemi uygulama verilerini ve cihazdaki özel dosyaları silebilir.

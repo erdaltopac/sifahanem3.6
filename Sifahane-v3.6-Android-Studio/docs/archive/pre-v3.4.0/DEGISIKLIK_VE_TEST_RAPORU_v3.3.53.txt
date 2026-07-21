@@ -1,0 +1,33 @@
+ŞİFAHANE v3.3.53 DEĞİŞİKLİK VE TEST RAPORU
+
+ÖNEMLİ DÜZELTMELER
+- Aynı alarm grubunda bildirim kanalı sesi ile tam ekran alarm sesinin üst üste binmesi önlendi.
+- Aynı alarm grubunun kısa aralıkta tekrar teslim edilmesi engellendi.
+- Tamamlanmış alarm oturumlarının eski bildirim veya PendingIntent üzerinden yeniden açılması engellendi.
+- Alarm kapatılırken ses, titreşim, bildirim ve bekleyen grup alarmı birlikte temizleniyor.
+- Grup alarm başlığı, açıklaması ve hilal simgesi ortalandı.
+- Hareketsizlik kilidi ayarı tek açılır listeye dönüştürüldü.
+- İkinci yedek kopyası için Android uygulama paylaşımı ve dosya konumu seçenekleri ayrıldı.
+- Profil eklemede elle giriş/yedekten içe aktarma ve yönetici/standart rol seçimi eklendi.
+- Grafik raporlarına yüksek çözünürlüklü PNG paylaşma ve galeriye kaydetme eklendi.
+- Kısa yardım kartlarından Yapay Zekâya Sor kaldırıldı; kapsamlı kılavuz Word belgesi olarak paylaşılabiliyor.
+- Kapsamlı kılavuz uygulama içinde tek parça açılabiliyor ve kendi arama alanıyla taranabiliyor.
+- Açılış ekranı geliştirici renkleri ve sistem çubuğu boşlukları düzenlendi.
+- Ölçüm sekme ve ekleme simgeleri eşit boyut ve hizada düzenlendi.
+- Logo yeşili, vantablack ve Türk kırmızısını temel alan merkezi tema uygulandı.
+- Tema ayarlarına görünüm ön ayarı, yazı tipi, yazı ölçeği, uygula ve sıfırla eklendi.
+- Ayarlar ekranına son kullanılan bölümü üste sabitleyen kullanım kaydı eklendi; kullanım kayıtları sonraki sıralama önerileri için tutuluyor.
+- Temel ilaç, profil, alarm, randevu ve ölçüm kartlarına ortak gradyan çerçeve uygulandı.
+
+DOĞRULAMA
+- Kotlin derleme kontrolü
+- Debug birim testleri
+- Android Lint
+- Debug APK üretimi
+
+GERÇEK CİHAZDA SINANMASI GEREKENLER
+- Aynı dakikadaki birden fazla ilacın tek ses/titreşimle açılması
+- Tekli ve toplu erteleme sonrası eski bildirimin kaybolması
+- WhatsApp, Quick Share, ChatGPT ve benzeri paylaşım hedefleri
+- PNG galeri kaydı ve Word kılavuz eki
+- Güncelleme sonrası 12345 doğrulaması ve profil kilitleri

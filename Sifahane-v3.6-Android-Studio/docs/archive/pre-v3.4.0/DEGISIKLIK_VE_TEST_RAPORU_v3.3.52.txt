@@ -1,0 +1,33 @@
+ŞİFAHANE v3.3.52 - DEĞİŞİKLİK VE TEST RAPORU
+
+SÜRÜM: 3.3.52
+SÜRÜM KODU: 335200
+VERİTABANI: v10 (migration gerekmez)
+
+UYGULANANLAR
+- Üç ayarlanabilir erteleme süresi; tekil ve toplu kullanım.
+- Ayarlanabilir hareketsizlik/desen kilidi.
+- İlk kurulum ve sürüm güncellemesi doğrulama kapıları.
+- İlk kurulum kişi verisi içe aktarma teklifi ve içe aktarılan profili yönetici yapma.
+- Son yönetici silme koruması ve yönetici doğrulamalı profil silme.
+- Birincil Şifahane Yedek kopyası ve sorulan isteğe bağlı ikinci kopya.
+- Hilal bildirim/alarm simgesi.
+- Merkezî renk ve tipografi standardı.
+- Grafik X/Y eksen değerleri.
+- Genişletilmiş, aranabilir ve harici yapay zekâya paylaşılabilir yardım.
+- Sistem geri tuşu uyumu ve alarm ekranından işlemsiz çıkış koruması.
+
+OTOMATİK DOĞRULAMALAR
+- :app:compileDebugKotlin: BAŞARILI
+- :app:testDebugUnitTest: BAŞARILI
+- Alarm gruplama testleri (3): BAŞARILI
+- Erteleme ayarı doğrulama testleri (3): BAŞARILI
+- :app:assembleDebug: BAŞARILI
+- :app:lintDebug: BAŞARILI, 0 HATA
+
+GERÇEK CİHAZDA KABUL TESTİ GEREKTİRENLER
+- Temiz kurulum ve mevcut 3.3.51 üzerinden güncelleme akışları.
+- Kilit ekranında grup alarmı ve geri tuşu engeli.
+- Üretici pil optimizasyonu altında alarm davranışı.
+- Storage Access Framework ile Şifahane Yedek klasörü kalıcı erişimi.
+- Harici yapay zekâ uygulaması seçimi ve paylaşım metni.

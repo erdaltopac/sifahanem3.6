@@ -1,0 +1,19 @@
+ŞİFAHANE v3.4.0 PROJESİNİ AÇMA VE DOĞRULAMA
+
+1) ZIP dosyasını tamamen çıkartın.
+2) Android Studio > Open seçeneğiyle Sifahane-v3.4.0-Android-Studio klasörünü açın.
+3) Gradle JDK olarak JDK 17 seçin.
+4) Gradle Sync işleminin tamamlanmasını bekleyin.
+5) Terminalde sırasıyla çalıştırın:
+   - Windows: gradlew.bat testDebugUnitTest
+   - Windows: gradlew.bat lintDebug
+   - Windows: gradlew.bat assembleDebug
+   - macOS/Linux: ./gradlew testDebugUnitTest lintDebug assembleDebug
+6) Android 12–16 cihaz/emülatörlerinde alarm izinlerini vererek manuel alarm matrisini uygulayın.
+7) APK'yı mevcut Şifahane uygulamasını kaldırmadan güncelleme olarak kurun.
+
+ÖNEMLİ
+- Uygulamayı kaldırmak yerel verileri silebilir.
+- İlk açılışta kullanıcı kendi yönetici PIN'ini oluşturur; varsayılan PIN yoktur.
+- İlk veritabanı açılışı mevcut düz veriyi SQLCipher veritabanına dönüştürebilir. İşlem sırasında uygulamayı zorla kapatmayın.
+- Yeni yedek parolası uygulamada tutulmaz. Parola kaybedilirse .sifbackup dosyası açılamaz.

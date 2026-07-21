@@ -1,0 +1,7 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="medicine_photos" path="medicine_photos/" />
+    <files-path name="profile_photos" path="profile_photos/" />
+    <cache-path name="reports" path="reports/" />
+    <cache-path name="person_exports" path="person_exports/" />
+    <cache-path name="guides" path="guides/" />
+</paths>

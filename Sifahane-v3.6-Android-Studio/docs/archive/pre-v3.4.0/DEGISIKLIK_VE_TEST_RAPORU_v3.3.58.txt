@@ -1,0 +1,35 @@
+ŞİFAHANE v3.3.58 DEĞİŞİKLİK VE TEST RAPORU
+
+Version Name: 3.3.58
+Version Code: 335800
+
+DÜZELTMELER
+
+1. Logo Row katmanının ekran genişliğiyle sınırlanması kaldırıldı.
+2. Logo satırına logo genişliği × dinamik kopya sayısı kadar requiredWidth verildi.
+3. Ekran dışındaki sonraki logo kopyalarının aynı grafik katmanında çizilmesi sağlandı.
+4. Animasyon tam bir logo genişliği kadar doğrusal hareket eder; başlangıç ve bitiş görüntüleri aynı logo döşemesine denk gelir.
+5. Banner 10 mm fiziksel yükseklik, beyaz zemin, %95 logo yüksekliği, 4,8:1 oran ve %5 vantablack cam katmanı özelliklerini korur.
+6. Banner içindeki bağımsız 2 dp/1 dp sınır gradyanları kaldırıldı.
+7. Alt menü alt sınırındaki 8 dp Vantablack %10 → %5 → şeffaf geçiş ortak bileşene dönüştürüldü.
+8. Aynı bileşenin düşey aynalanmış hali bannerın üst sınırının dışına eklendi.
+9. Banner üst ve alt menü alt geçişleri aynı yükseklik, renk, opaklık ve durak değerlerini kullanır.
+10. Sayfa ve kart geçişleri aynı %10 → %5 → şeffaf vantablack renk dizisine geçirildi.
+11. Sayfa ve kart geçişleri minimum 2 dp görünür kalınlığa yükseltildi.
+12. Ortak Şifahane kartlarında geçiş normal çerçevenin dışındaki 2 dp kapsayıcıda çizilir.
+
+OTOMATİK TESTLER
+
+- Kotlin/Android derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI
+- Engelleyici olmayan uyarılar: Bazı Android ve Compose API'leri için gelecekte kaldırılma uyarıları bulunmaktadır.
+
+GERÇEK CİHAZ KONTROLLERİ
+
+- Logo akışında boşluk, bekleme veya sıçrama olmaması.
+- Bütün logo kopyalarının aynı yükseklik ve biçimde görünmesi.
+- Ekrandan çıkan logo bölümünün karşı taraftan eş zamanlı girmesi.
+- Banner üst geçişinin alt menü alt geçişinin düşey aynası gibi görünmesi.
+- Kart ve sayfa geçişlerinin ince fakat görünür olması.

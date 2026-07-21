@@ -1,0 +1,27 @@
+ŞİFAHANE v3.3.51 - DEĞİŞİKLİK VE TEST RAPORU
+
+UYGULANAN DEĞİŞİKLİKLER
+- Aynı dakikadaki ilaçlar tek sistem alarmında gruplandı.
+- Tek bildirim, tek tam ekran kart ve tek ses/titreşim akışı uygulandı.
+- Farklı kullanıcılar için grup kartına kullanıcı sekmeleri eklendi.
+- Tekil işlemler: Aldım, 5 dk ertele, 10 dk ertele, Almayacağım.
+- Toplu işlemler: Tümünü aldım, tümünü 5 dk ertele, tümünü 10 dk ertele,
+  tümünü almayacağım.
+- Doz geçmişi ve stok hareketleri ilaç bazında korunmuştur.
+- Alarm yeniden planlama, catch-up ve snooze akışları grup mantığına geçirildi.
+- İlaç ekleme, düzenleme ve silme sonrasında bütün alarm grupları yenilenir.
+- API 26 alarm ekranı uyumluluğu ve kamera Lint yapılandırması düzeltildi.
+
+OTOMATİK TESTLER
+- AlarmGroupingTest.sameMinuteUsesOneGroupKey: BAŞARILI
+- AlarmGroupingTest.adjacentMinutesUseDifferentGroupKeys: BAŞARILI
+- AlarmGroupingTest.normalAndSnoozeDoNotOverwriteEachOther: BAŞARILI
+- :app:compileDebugKotlin: BAŞARILI
+- :app:testDebugUnitTest: BAŞARILI
+- :app:assembleDebug: BAŞARILI
+- :app:lintDebug: BAŞARILI (0 hata)
+
+NOT
+- Üretilen APK debug anahtarıyla imzalanmıştır.
+- Gerçek cihazda kilit ekranı, üretici pil optimizasyonu ve tam ekran alarm davranışı
+  ayrıca kullanıcı kabul testiyle doğrulanmalıdır.

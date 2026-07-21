@@ -1,0 +1,22 @@
+ŞİFAHANE v3.3.64 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.64
+- versionCode: 336400
+
+Uygulanan düzenlemeler
+- Yedek kaynağı kartındaki Başka Konum, Şifahane Yedek, İptal ve Geri seçenekleri kutusuz, arka plansız ve çerçevesiz tıklanabilir metinlere dönüştürüldü.
+- Raporlar sayfasındaki ortak kontrol yüzeylerinin iç yumuşak sınırı 5 dp yapıldı.
+- Sınır renk durakları alt menü alt sınırındaki Vantablack geçiş standardıyla aynı tutuldu.
+- Rapor kontrol arka planları alt menüyle aynı yüzde 50 logo yeşili opaklığında korundu.
+- Zarif 10 dp oval köşeler ve yüzde 5 cam katmanı korundu.
+- Raporlar sayfasının tamamını kaplayan, etkileşimi engellemeyen yüzde 5 Vantablack cam katmanı eklendi.
+- Grafik seçim kutuları işaretliyken yüzde 50 logo yeşili dolgu, işaretsizken şeffaf iç alan kullanıyor.
+- Hazerfen banner logoları yüzde 100 opaklığa getirildi.
+- Banner akışı beş dakikada bir ekran genişliği ilerleyecek şekilde yavaşlatıldı.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI

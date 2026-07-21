@@ -1,0 +1,48 @@
+ŞİFAHANE v3.3.56 DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm: 3.3.56
+Version Code: 335600
+
+UYGULANAN GELİŞTİRMELER
+
+1. Deneme alarmına Ayarlar sayfasından okunan üç erteleme seçeneği eklendi.
+2. Deneme alarmı çalma süresi dolunca otomatik 5 dakika ertelenir.
+3. Grup alarm anahtarları kayıt altına alınarak eski istekleri toplu temizleme altyapısı eklendi.
+4. “Önceden Kalmış Alarm İsteklerini Sil” işlemi ve onay ekranı eklendi; işlemden sonra geçerli alarmlar yenilenir.
+5. Son alarm, grup, erteleme ve sonraki alarm verilerini gösteren tanılama kayıtları eklendi.
+6. Android İzinleri merkezi eklendi. Bildirim, kesin alarm, tam ekran alarm, pil optimizasyonu ve kamera durumları gösterilir.
+7. Android’in doğrudan değiştirmediği izinler için güvenli sistem ekranlarına yönlendirme eklendi.
+8. Uygulama Hakkında bölümü Version Name, Version Code, derleme türü ve zamanı otomatik gösterecek şekilde yenilendi.
+9. Sürüm bilgisini panoya kopyalama eklendi.
+10. Yeni kişi oluşturma ve içe aktarma rol seçimi akışlarına açık İptal işlemleri eklendi.
+11. Ortak vantablack çerçeveli logo yeşili simge bileşeni eklendi.
+12. Ortak vantablack/logo yeşili dış sınır ve %50 Türk mavisi iç vurgu kullanan kart bileşeni eklendi.
+13. İlaç, kişi, ölçüm ve randevu kartları ortak tasarım bileşenine geçirildi.
+14. Bugün ve Randevular sayfasındaki randevu sunumları aynı görsel hiyerarşiye yaklaştırıldı.
+15. İlaç, randevu ve ölçüm ekleme simgeleri ortak logo yeşili/vantablack standardına geçirildi.
+16. Hazerfen banner kaynağı son paylaşılan hazerfen.png ile değiştirildi.
+17. Banner logoları aynı yükseklikte, bitişik ve boşluksuz olacak şekilde düzenlendi.
+18. Banner bir logo genişliği üzerinden kesintisiz döngü yapacak biçimde yeniden yazıldı.
+19. Banner ile alt menü arasındaki 6 dp ayırıcı/beyaz hat kaldırıldı.
+20. Banner ve alt menü aynı yüzey içinde birleştirildi; %10 vantablack cam katmanı korundu.
+21. Banner yaklaşık 10 mm yüksekliğe ayarlandı ve Android animasyon azaltma tercihine uyarlandı.
+22. Kapsamlı kullanıcı kılavuzu izin merkezi, alarm temizliği ve yeni banner davranışıyla güncellendi.
+
+OTOMATİK TEST SONUÇLARI
+
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI
+- Derleyici uyarıları: Kullanılan bazı Android/Compose API'lerinin gelecekte kaldırılacağına ilişkin engelleyici olmayan deprecation uyarıları vardır.
+
+GERÇEK CİHAZDA DOĞRULANMASI GEREKENLER
+
+- Ekran açık/kapalı tekli ve grup alarmı.
+- Deneme alarmının üç erteleme seçeneği ve zamanında yeniden tetiklenmesi.
+- Bir grup alarmında yalnız bir ses kaynağının çalışması.
+- Eski bildirimin ertelenen alarmı yeniden açmaması.
+- Üreticiye özgü izin ve pil optimizasyonu ekranları.
+- Banner logolarının aynı yükseklikte ve boşluksuz sonsuz akması.
+- Banner ile alt menü arasında beyaz hat bulunmaması.
+- Büyük yazı, TalkBack, yatay ekran ve farklı sistem gezinme türleri.

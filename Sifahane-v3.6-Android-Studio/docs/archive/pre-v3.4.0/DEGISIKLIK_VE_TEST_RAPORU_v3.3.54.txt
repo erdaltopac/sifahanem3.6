@@ -1,0 +1,19 @@
+ŞİFAHANE v3.3.54 DEĞİŞİKLİK VE TEST RAPORU
+
+- Deneme alarmı başlığı yatayda ortalandı.
+- Ekran açıkken ve Şifahane ön planda değilken alarm etkinliğinin doğrudan açılması güçlendirildi.
+- Ayarlar > Alarm ve Bildirimler bölümüne 30 saniye, 1, 2, 3, 5 ve 10 dakika seçenekli alarm çalma süresi eklendi.
+- Çalma süresinde işlem yapılmazsa bekleyen tekli veya grup alarmı otomatik olarak 5 dakika erteleniyor.
+- Alt menünün hemen üzerine yaklaşık 10 mm (38 dp) yüksekliğinde kesintisiz kayan kuruluş logoları bannerı eklendi.
+- Banner sırası Hazerfen, Zerre, IZER, Grapheine ve Hazernet olarak ayarlandı.
+- Bannera dokunulduğunda https://www.hazerfen.com.tr harici tarayıcıda açılıyor.
+
+OTOMATİK DOĞRULAMA
+- Kotlin derleme
+- Birim testleri
+- Android Lint
+- Debug APK üretimi
+
+GERÇEK CİHAZ KONTROLÜ
+- Android üreticilerinin arka plandan tam ekran etkinlik açma kuralları farklı olabilir.
+- Alarm, ekran açık/kapalı ve uygulama ön/arka plan matrisinde ayrıca sınanmalıdır.

@@ -1,0 +1,23 @@
+ŞİFAHANE v3.3.59 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.59
+- versionCode: 335900
+
+Uygulanan düzenlemeler
+- Kayar banner ve üstündeki aynalanmış yumuşak geçiş tek bir birleşik bileşen haline getirildi.
+- Birleşik bileşenin toplam fiziksel yüksekliği cihazın ydpi değerinden hesaplanarak 10 mm yapıldı.
+- Üst geçiş yüksekliği toplam 10 mm içinden ayrıldığı için bileşen artık 10 mm'yi aşmıyor.
+- Hazerfen logoları yüzde 50 opaklıkla filigran görünümünde gösteriliyor.
+- Yüzde 5 opak Vantablack cam katmanı, üst geçiş ve kayan logo alanının tamamını tek parça olarak kaplıyor.
+- Kesintisiz, eşit yükseklikte, en-boy oranı korunmuş logo döngüsü ve banner bağlantısı korundu.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI
+
+Not
+- Fiziksel 10 mm hesabı Android'in bildirdiği ydpi değerine dayanır. Üretici tarafından hatalı ydpi bildirilen cihazlarda gerçek cetvel ölçüsü küçük farklılık gösterebilir.
+- Animasyonun görsel görünümü gerçek telefonda kullanıcı testiyle ayrıca doğrulanmalıdır.

@@ -1,0 +1,29 @@
+ŞİFAHANE v3.4.0 — YEREL DOĞRULAMA
+Tarih: 2026-07-21
+
+GEÇTİ
+- CORE_SELF_TEST_OK
+  - PBKDF2: aynı sır için farklı salt/özet
+  - doğru PIN doğrulaması
+  - yanlış PIN reddi
+  - artan kilit süresi
+  - yedek yol güvenliği
+  - AES-GCM şifreleme/çözme turu
+  - yanlış parola reddi
+  - tek bayt değişiklik reddi
+  - kararlı ve çakışma araştırmalı alarm kimliği
+- XML_WELL_FORMED_OK: 7 kaynak XML dosyası
+- NO_DEFAULT_PIN_MARKERS_OK: kaynakta 12345/DEFAULT_PIN/verifyDefault bulunmadı
+- Gradle önyükleyici Java kaynağı javac ile derlendi
+- Gradle önyükleyici JAR giriş noktası doğrulandı
+- Değiştirilen Kotlin dosyalarında bağımsız parser taramasında sözdizimi tanısı bulunmadı
+
+ÇALIŞTIRILAMADI
+- Gradle dependency resolution
+- testDebugUnitTest
+- lintDebug
+- assembleDebug / assembleRelease
+- Room schema üretimi
+- Android cihaz/emülatör alarm matrisi
+
+Neden: Bu çalışma ortamında Android SDK, sdkmanager ve hazır Gradle kurulumu yoktur; dış bağımlılıkların ağ üzerinden çözümü de çalışma konteynerinde kullanılamamıştır.

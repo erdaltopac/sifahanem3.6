@@ -1,0 +1,38 @@
+ŞİFAHANE v3.3.57 DEĞİŞİKLİK VE TEST RAPORU
+
+Version Name: 3.3.57
+Version Code: 335700
+
+UYGULANAN DÜZELTMELER
+
+1. Banner yüksekliği cihazın fiziksel ekran yoğunluğuna göre 10 mm hesaplanacak şekilde değiştirildi.
+2. Banner arka planı beyaz yapıldı.
+3. Vantablack cam katmanı opaklığı %5 olarak ayarlandı.
+4. Logo yüksekliği banner yüksekliğinin %95'i olarak ayarlandı ve düşeyde ortalandı.
+5. Logo genişliği özgün 1200:250 en-boy oranından hesaplanır; FillBounds kaldırıldı ve Fit kullanıldı.
+6. Banner genişliğini doldurup aşacak logo kopyası sayısı ekran genişliğine göre dinamik hesaplanır.
+7. Kopyalar sıfır aralıkla bitişik yerleştirilir.
+8. Animasyon tam bir logo genişliği kadar doğrusal hareket ederek aynı görüntü konumuna modüler biçimde döner.
+9. Banner üst ve alt sınırına banner yüksekliğini artırmayan ince yumuşak geçişler eklendi.
+10. Randevular sayfasındaki Yaklaşan, Geçmiş ve Ekle simgeleri aynı 42 dp simge satırını kullanacak şekilde düzenlendi.
+11. Sayfalar için ortak ince yumuşak sınır geçişi eklendi.
+12. Ortak Şifahane kartları, ayar kartları ve alarm kartları aynı ince sınır geçişi standardına geçirildi.
+
+OTOMATİK TESTLER
+
+- Kotlin/Android derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI
+- Engelleyici olmayan uyarılar: Bazı Android ve Compose API'leri için gelecekte kaldırılma uyarıları bulunmaktadır.
+
+GERÇEK CİHAZDA DOĞRULANMASI GEREKENLER
+
+- Banner fiziksel yüksekliğinin yaklaşık 10 mm olması.
+- Bütün logoların aynı formda, aynı yükseklikte ve düşeyde ortalanmış görünmesi.
+- Logo dizisinde boşluk, sıçrama veya bekleme oluşmaması.
+- Ekrandan çıkan bölümün karşı taraftan eş zamanlı girmesi.
+- Banner arka planının beyaz ve cam katmanının hafif görünmesi.
+- Banner ile alt menünün bütünlüğü.
+- Randevu Ekle simgesinin iki sekme simgesiyle aynı düşey merkezde olması.
+- Sayfa ve kart sınır geçişlerinin ince fakat görünür olması.

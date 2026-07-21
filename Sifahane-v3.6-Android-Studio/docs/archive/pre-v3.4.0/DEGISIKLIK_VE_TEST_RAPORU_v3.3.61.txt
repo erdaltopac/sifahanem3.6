@@ -1,0 +1,22 @@
+ŞİFAHANE v3.3.61 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.61
+- versionCode: 336100
+
+Uygulanan düzenlemeler
+- Banner logoları yüzde 50 opaklığa getirildi.
+- Logo akışı dakikada bir ekran genişliği ilerleyecek şekilde yavaşlatıldı.
+- 7,5 mm birleşik banner, yumuşak geçiş ve yüzde 5 cam katmanı korundu.
+- Randevular sayfasındaki Ekle etiketi Yaklaşan ve Geçmiş etiketleriyle aynı renk, yazı tipi, boyut ve kalınlığa getirildi.
+- Ölçümler sayfasındaki üç sekme etiketi aynı yazı standardında ve kalın hale getirildi.
+- Raporlar sayfasındaki tarih, kapsam, grafik seçimi ve işlem kontrolleri beyaz zemin, eşit yükseklik, ortak yazı standardı ve içe çizilen 4 dp yumuşak sınırla birleştirildi.
+- Silme kontrolünde tehlike anlamı Türk kırmızısı metin ve simgeyle korundu.
+- Ayarlar grup başlıkları tek satıra sığana kadar kontrollü biçimde küçülecek şekilde düzenlendi.
+- Ayarlar ana sayfasındaki son kullanılan ve en sık kullanılan hızlı erişim düzeni korundu; alt sayfalardaki kalıcı düzen kullanıcı alışkanlığını bozmamak için değiştirilmedi.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI

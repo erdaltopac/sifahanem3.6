@@ -1,0 +1,18 @@
+ŞİFAHANE v3.3.60 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.60
+- versionCode: 336000
+
+Uygulanan düzenlemeler
+- Banner, üst yumuşak geçiş ve Vantablack cam katmanının birleşik yüksekliği 7,5 mm yapıldı.
+- Hazerfen logolarının opaklığı yüzde 25'e düşürülerek filigran görünümü hafifletildi.
+- Akış hızı cihaz ekran genişliğine bağlandı; logolar dakikada iki ekran genişliği ilerler.
+- Kesintisiz logo döngüsü ve yüzde 5 opak Vantablack cam katmanı korundu.
+- Randevular sekmesindeki Ekle etiketi kalın yazı biçimine getirildi.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI

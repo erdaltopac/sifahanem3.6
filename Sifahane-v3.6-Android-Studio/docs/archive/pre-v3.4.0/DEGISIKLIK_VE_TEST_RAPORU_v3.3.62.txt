@@ -1,0 +1,22 @@
+ŞİFAHANE v3.3.62 - DEĞİŞİKLİK VE TEST RAPORU
+
+Sürüm bilgileri
+- versionName: 3.3.62
+- versionCode: 336200
+
+Uygulanan düzenlemeler
+- Yeni kişi oluşturma kartındaki butonlar Bilgileri Gir, Yedekten İçe Aktar, İptal ve Geri sırasına alındı.
+- Yeni kullanıcı yetkisi kartındaki butonlar Standart Kullanıcı, Yönetici, İptal ve Geri sırasına alındı.
+- Yedek kaynağı kartına üstte Başka Konum ve Şifahane Yedek, altta İptal ve Geri olacak şekilde eşit iki satır eklendi.
+- Bu akışlardaki butonlar eşit ölçü, yüzde 25 logo yeşili, 4 dp iç yumuşak sınır ve yüzde 5 Vantablack cam katmanı kullanıyor.
+- İptal tüm ekleme akışını kapatır; Geri bir önceki karta döner.
+- Raporlar sayfasındaki sınırlandırılmış kontroller yüzde 25 logo yeşili ve yüzde 5 cam katmanıyla güncellendi.
+- Ayarlar ana kartları ve grup başlıkları tek satıra sığana kadar otomatik küçülecek şekilde düzenlendi.
+- Açık logo yeşili kullanan diğer normal butonlar yüzde 25 opaklığa getirildi; kritik alarm işlem butonu korunmuştur.
+- Banner akışı iki dakikada bir ekran genişliği ilerleyecek şekilde yavaşlatıldı.
+
+Doğrulama
+- Kotlin derlemesi: BAŞARILI
+- Birim testleri: BAŞARILI (6/6)
+- Android lint: BAŞARILI
+- Debug APK üretimi: BAŞARILI

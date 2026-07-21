@@ -1,0 +1,42 @@
+ŞİFAHANE v3.3.50 - DEĞİŞİKLİK VE TEST RAPORU
+
+TEMEL SÜRÜM
+- Şifahane v3.3.49.2.11
+
+UYGULANAN GELİŞTİRMELER
+1. Bugün ekranında ALINDI durumundaki dozlara “ALINDI KAYDINI GERİ AL” düğmesi eklendi.
+2. Yanlış geri almayı önlemek için ikinci onay penceresi eklendi.
+3. Geri alınan doz için “ALINDI GERİ ALINDI” düzeltme kaydı oluşturuluyor.
+4. Kart yeniden “Henüz Alınmadı” durumuna dönüyor.
+5. DoseLog tablosuna nullable stockDecreased alanı eklendi.
+6. Yeni ALINDI kayıtlarında stoktan gerçekten düşüm yapılıp yapılmadığı kaydediliyor.
+7. Stok düşümü yapılmış kayıtta geri alma sırasında stok 1 artırılıyor.
+8. Stok düşümü yapılmamış kayıtta stok değiştirilmiyor.
+9. Eski sürüm kayıtlarında stok hareketi bilinmediğinden kullanıcıya stok geri ekleme seçimi gösteriliyor.
+10. Doz ve stok güncellemeleri tek Room transaction içinde yapılıyor.
+11. Veritabanı 9 -> 10 migration eklendi; eski satırlar stockDecreased=NULL olarak korunuyor.
+12. Yedekleme formatı v3'e çıkarıldı ve stockDecreased bilgisi yedeğe eklendi.
+13. v1/v2 eski yedeklerin yeni sürüme aktarım uyumluluğu korundu.
+14. Alarm ekranından oluşturulan yeni ALINDI kayıtları da stok hareketini kaydediyor.
+15. AlarmScheduler, AlarmReceiver, AlarmRescheduler ve BootReceiver kaynakları değiştirilmedi.
+
+DOĞRULAMALAR
+- Değiştirilen 6 Kotlin dosyası Kotlin PSI ayrıştırıcısıyla kontrol edildi: sözdizimi hatası yok.
+- SQLite üzerinde 9 -> 10 ALTER TABLE işlemi denendi: eski ALINDI satırı korunuyor ve stockDecreased NULL oluşuyor.
+- decreaseStock sorgusu yalnızca stock>0 iken satırı güncelliyor ve etkilenen satır sayısını döndürüyor.
+- increaseStock sorgusu ayrı olarak eklendi.
+- Yeni sürüm numarası: versionName 3.3.50 / versionCode 335000.
+
+ANDROID DERLEME NOTU
+- Çalışma ortamında Android SDK, Gradle dağıtımı ve bağımlılık önbelleği bulunmadığından assembleDebug/assembleRelease çalıştırılamadı.
+- Proje Android Studio'da Gradle Sync sonrasında Clean Project ve Rebuild Project ile derlenmelidir.
+- Mevcut uygulama kaldırılmadan güncelleme olarak kurulmalıdır.
+
+ÖNERİLEN TELEFON TESTLERİ
+A. Stok 5 iken dozu ALINDI işaretle: stok 4 olmalı; geri al: stok 5 ve kart Henüz Alınmadı olmalı.
+B. Stok 0 iken dozu ALINDI işaretle: stok 0 kalmalı; geri al: stok 0 kalmalı.
+C. ALINDI kaydında sadece saati değiştir: stok ikinci kez azalmamalı.
+D. Geri alınan dozu yeniden ALINDI işaretle: stok yalnızca bir kez azalmalı.
+E. v3.3.49.2.11'den güncelleme kur: kullanıcı, ilaç, ölçüm ve geçmiş doz kayıtları korunmalı.
+F. Eski sürümde oluşturulmuş ALINDI kaydını geri al: stok seçimi görünmeli ve kullanıcının seçimine göre uygulanmalı.
+G. Yeni yedek oluşturup geri yükle: ALINDI/geri alma geçmişi ve stok hareketi bilgisi korunmalı.
